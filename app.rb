@@ -6,4 +6,8 @@ class App < Sinatra::Base
     erb :index
   end
 
+  post '/student' do
+    @student 
+    erb :new 
+  end 
 end
