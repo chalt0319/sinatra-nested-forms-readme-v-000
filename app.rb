@@ -10,7 +10,6 @@ class App < Sinatra::Base
   post '/student' do
     @student = Student.new(params[:student])
     params[:student][:courses].each do |details|
-      binding.pry
       Course.new(details)
     end
     @courses = Course.all
