@@ -1,6 +1,6 @@
 class Course
   attr_reader :name, :topic
- 
+
   COURSES = []
  
   def initialize(args)
@@ -8,7 +8,7 @@ class Course
     @topic = args[:topic]
     COURSES << self
   end
- 
+
   def self.all
     COURSES
   end
